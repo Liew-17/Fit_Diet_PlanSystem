@@ -43,6 +43,17 @@ The source code (`src`) is divided into three main Java packages along with FXML
 - **JavaFX & FXML** (UI and scene management)  
 - **Javadoc** (documentation in `object` package)  
 
+## Prerequisites
+- **Java Development Kit (JDK) 11 or higher** installed.  
+- **JavaFX SDK** installed and configured in your IDE.  
+- IDE that supports JavaFX (e.g., IntelliJ IDEA, Eclipse, NetBeans).  
+
+## How to Run
+1. Clone this repository.  
+2. Open the project in your IDE.  
+3. Make sure the JavaFX library is linked in your project settings.  
+4. Run the `Main` class located in the `application` package.  
+
 ## How to Run
 1. Clone this repository.  
 2. Open the project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse).  
