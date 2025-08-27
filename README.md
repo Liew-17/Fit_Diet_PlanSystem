@@ -54,11 +54,5 @@ The source code (`src`) is divided into three main Java packages along with FXML
 3. Make sure the JavaFX library is linked in your project settings.  
 4. Run the `Main` class located in the `application` package.  
 
-## How to Run
-1. Clone this repository.  
-2. Open the project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse).  
-3. Run the `Main` class located in the `application` package.  
-
-
 ---
 
