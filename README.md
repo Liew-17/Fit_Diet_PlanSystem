@@ -6,7 +6,7 @@ The system supports **United Nations Sustainable Development Goal (SDG) 3: Good 
 
 ## Features
 - Create and manage **daily diet plans** with food and exercise entries.  
-- **Planned vs. completed entries** to monitor progress.  
+- **Planned vs. Actual entries** to monitor progress.  
 - A **default library** of food and exercise with required nutrition and MET data, with support for adding **custom library items**.  
 - **Quick plan generation** with various duplication options.  
 - An **overview schedule** that showcases the average intake, calories burned, and net calories of the month.  
