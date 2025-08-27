@@ -59,8 +59,6 @@ The source code (`src`) is divided into three main Java packages along with FXML
 2. Open the project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse).  
 3. Run the `Main` class located in the `application` package.  
 
-## Contribution to SDG 3
-By providing a structured system to track and manage food intake and exercise routines, this project directly encourages healthier daily habits, thereby supporting **SDG 3: Good Health and Well-Being**.
 
 ---
 
