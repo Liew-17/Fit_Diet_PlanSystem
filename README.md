@@ -12,7 +12,7 @@ The system supports **United Nations Sustainable Development Goal (SDG) 3: Good 
 - An **overview schedule** that showcases the average intake, calories burned, and net calories of the month.  
 - Intuitive **JavaFX interface** powered by FXML.  
 - **Object-Oriented Design** with abstraction, inheritance, and polymorphism.  
-- Detailed **Javadoc documentation** provided in the `object` package.  
+- Detailed **Javadoc documentation** is available in the `doc` folder.
 
 ## Project Structure
 The source code (`src`) is divided into three main Java packages along with FXML files:
