@@ -5,9 +5,11 @@ The **Fit_Diet_Planner** is an Object-Oriented Programming (OOP) project designe
 The system supports **United Nations Sustainable Development Goal (SDG) 3: Good Health and Well-Being** by promoting healthier lifestyles and encouraging consistent diet and fitness tracking.
 
 ## Features
-- Create and manage **daily diet plans** with food entries.  
-- Schedule and track **exercise routines** with calorie burn estimates.  
+- Create and manage **daily diet plans** with food and exercise entries.  
 - **Planned vs. completed entries** to monitor progress.  
+- A **default library** of food and exercise with required nutrition and MET data, with support for adding **custom library items**.  
+- **Quick plan generation** with various duplication options.  
+- An **overview schedule** that showcases the average intake, calories burned, and net calories of the month.  
 - Intuitive **JavaFX interface** powered by FXML.  
 - **Object-Oriented Design** with abstraction, inheritance, and polymorphism.  
 - Detailed **Javadoc documentation** provided in the `object` package.  
