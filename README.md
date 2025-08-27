@@ -1,7 +1,7 @@
 # Fit_Diet_Planner
 
 ## Overview
-The **Fit Diet Plan System** is an Object-Oriented Programming (OOP) project designed to help users schedule their diet and exercise plans in an organized and efficient way.  
+The **Fit_Diet_Planner** is an Object-Oriented Programming (OOP) project designed to help users schedule their diet and exercise plans in an organized and efficient way.  
 The system supports **United Nations Sustainable Development Goal (SDG) 3: Good Health and Well-Being** by promoting healthier lifestyles and encouraging consistent diet and fitness tracking.
 
 ## Features
@@ -50,3 +50,4 @@ The source code (`src`) is divided into three main Java packages along with FXML
 By providing a structured system to track and manage food intake and exercise routines, this project directly encourages healthier daily habits, thereby supporting **SDG 3: Good Health and Well-Being**.
 
 ---
+
