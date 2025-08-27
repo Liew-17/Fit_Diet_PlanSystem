@@ -1,4 +1,4 @@
-# Fit_Diet_PlanSystem
+# Fit Diet Plan System
 
 ## Overview
 The **Fit Diet Plan System** is an Object-Oriented Programming (OOP) project designed to help users schedule their diet and exercise plans in an organized and efficient way.  
