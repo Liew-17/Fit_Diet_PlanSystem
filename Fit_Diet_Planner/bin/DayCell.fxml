@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane fx:id="dayCell" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#viewDetails" prefHeight="70.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DayCellController">
+
+    <children>
+        <!-- Day number -->
+        <Label fx:id="dayNumberLabel" alignment="CENTER" layoutX="10.0" mouseTransparent="true" prefHeight="17.0" prefWidth="80.0" text="1" />
+
+        <!-- Actual net calorie -->
+        <Label fx:id="actualNetCalLabel" alignment="CENTER" layoutX="10.0" layoutY="22.0" mouseTransparent="true" prefHeight="20.0" prefWidth="80.0" style="-fx-font-weight: bold;" text="+2200 kcal" />
+
+        <!-- Planned net calorie (small) -->
+        <Label fx:id="planNetCalLabel" alignment="CENTER" layoutX="10.0" layoutY="50.0" mouseTransparent="true" prefHeight="15.0" prefWidth="80.0" style="-fx-font-size: 10px;" text="Plan: 2300 kcal 🔺" />
+
+        <!-- Mini progress bar (background) -->
+        <Rectangle fx:id="progressBarBg" arcHeight="3" arcWidth="3" height="2.0" layoutX="10.0" layoutY="72.0" mouseTransparent="true" style="-fx-fill: #ddd;" width="80.0" y="-5.0" />
+
+        <!-- Mini progress bar (foreground) -->
+        <Rectangle fx:id="progressBarFg" arcHeight="3" arcWidth="3" height="2.0" layoutX="10.0" layoutY="72.0" mouseTransparent="true" style="-fx-fill: #4caf50;" width="50.0" y="-5.0" />
+    </children>
+
+    <cursor>
+        <Cursor fx:constant="HAND" />
+    </cursor>
+</Pane>

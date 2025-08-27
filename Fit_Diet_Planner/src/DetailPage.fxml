@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailController">
+   <children>
+      <BorderPane prefHeight="750.0" prefWidth="1000.0">
+         <top>
+            <VBox prefHeight="103.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+      				<fx:include fx:id="navBar" source="NavBar.fxml" BorderPane.alignment="CENTER" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="63.0" prefWidth="655.0">
+                           <children>
+                
+                              <Label fx:id="dateLabel" text="Label">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Manage your daily nutrition and exercise entries">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="336.0">
+                           <children>
+                              <Button focusTraversable="false" mnemonicParsing="false" onAction="#openDuplicatePopUp" prefHeight="34.0" prefWidth="126.0" text="Duplicate Plan" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="535.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="500.0">
+                     <children>
+                        <Label text="Food Entries">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <GridPane hgap="10.0" VBox.vgrow="ALWAYS">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ScrollPane fitToWidth="true" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                 <content>
+                                    <VBox fx:id="plannedFoodBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />
+                                 </content>
+                                 <GridPane.margin>
+                                    <Insets left="1.0" right="1.0" />
+                                 </GridPane.margin>
+                              </ScrollPane>
+                              <ScrollPane fitToWidth="true" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <content>
+                                    <VBox fx:id="actualFoodBox" />
+                                 </content>
+                                 <GridPane.margin>
+                                    <Insets left="1.0" right="1.0" />
+                                 </GridPane.margin>
+                              </ScrollPane>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="207.0" text="Planned" HBox.hgrow="ALWAYS" />
+                                    <Button fx:id="addFoodPlanBtn" focusTraversable="false" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="+" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="207.0" text="Actual" HBox.hgrow="ALWAYS" />
+                                    <Button fx:id="addFoodRecordBtn" focusTraversable="false" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="+" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="500.0">
+                     <children>
+                        <Label text="Exercises Entries">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <GridPane hgap="10.0" VBox.vgrow="ALWAYS">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="12.199995422363287" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="409.99996795654295" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ScrollPane fitToWidth="true" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                 <content>
+                                    <VBox fx:id="plannedExeBox" />
+                                 </content>
+                                 <GridPane.margin>
+                                    <Insets left="1.0" right="1.0" />
+                                 </GridPane.margin>
+                              </ScrollPane>
+                              <ScrollPane fitToWidth="true" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <content>
+                                    <VBox fx:id="actualExeBox" />
+                                 </content>
+                                 <GridPane.margin>
+                                    <Insets left="1.0" right="1.0" />
+                                 </GridPane.margin>
+                              </ScrollPane>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="207.0" text="Actual" HBox.hgrow="ALWAYS" />
+                                    <Button fx:id="addExeRecordBtn" focusTraversable="false" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="+" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="207.0" text="Planned" HBox.hgrow="ALWAYS" />
+                                    <Button fx:id="addExePlanBtn" focusTraversable="false" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="+" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </bottom>
+         <center>
+            <HBox prefHeight="150.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="50.0" prefWidth="326.0" style="-fx-border-color: lightgrey;" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="23.0" prefWidth="322.0" text="Intake" textAlignment="CENTER" />
+                        <GridPane prefWidth="318.0" VBox.vgrow="ALWAYS">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="25.599981689453124" minHeight="10.0" prefHeight="20.799993896484374" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Planned" />
+                              <Label text="Actual" GridPane.columnIndex="1" />
+                              <Label fx:id="plannedIntakeLabel" text="Label" GridPane.rowIndex="1" />
+                              <Label fx:id="actualIntakeLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="326.0" style="-fx-border-color: lightgrey;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="23.0" prefWidth="322.0" text="Burn" textAlignment="CENTER" />
+                        <GridPane VBox.vgrow="ALWAYS">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="25.599981689453124" minHeight="10.0" prefHeight="20.799993896484374" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.000006103515624" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Planned" />
+                              <Label text="Actual" GridPane.columnIndex="1" />
+                              <Label fx:id="plannedBurnLabel" text="Label" GridPane.rowIndex="1" />
+                              <Label fx:id="actualBurnLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="50.0" prefWidth="326.0" style="-fx-border-color: lightgrey;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="23.0" prefWidth="322.0" text="Net Calories" textAlignment="CENTER" />
+                        <GridPane VBox.vgrow="ALWAYS">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="25.599981689453124" minHeight="10.0" prefHeight="20.799993896484374" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.000006103515624" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Planned" />
+                              <Label text="Actual" GridPane.columnIndex="1" />
+                              <Label fx:id="plannedNetLabel" text="Label" GridPane.rowIndex="1" />
+                              <Label fx:id="actualNetLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </GridPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </center></BorderPane>
+   </children>
+</AnchorPane>
